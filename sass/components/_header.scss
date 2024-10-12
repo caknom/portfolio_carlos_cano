@@ -1,0 +1,6 @@
+@use '../abstracts' as b;
+
+nav, ul, li, a {    
+    text-decoration: none;
+    font-weight: b.$regular-font-weight;
+}

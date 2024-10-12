@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["../sass/base/_typography.scss","../sass/abstracts/_variables.scss","../sass/components/_header.scss","../sass/pages/_home.scss"],"names":[],"mappings":"AAEA,KACI,gCCDe,CAAA,YCCf,oBAAA,CACA,eDEkB,CEJtB,KACI,UFHY","file":"main.css"}
