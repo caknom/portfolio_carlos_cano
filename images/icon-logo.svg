@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 121.87 36">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #231f20;
+      }
+
+      .st2 {
+        fill: #fff;
+        font-family: Raleway-Bold, Raleway;
+        font-size: 16.9px;
+        font-weight: 700;
+      }
+
+      .st1 {
+        font-family: Raleway-Regular, Raleway;
+        font-size: 16.44px;
+        letter-spacing: -.02em;
+      }
+
+      .st3 {
+        letter-spacing: -.1em;
+      }
+    </style>
+  </defs>
+  <rect class="st0" width="43.16" height="36"/>
+  <text class="st1" transform="translate(47.2 31.5)"><tspan x="0" y="0">developer</tspan></text>
+  <text class="st1" transform="translate(47.85 15)"><tspan x="0" y="0">web</tspan></text>
+  <text class="st2" transform="translate(-2.12 31.5)"><tspan class="st3" x="0" y="0">/</tspan><tspan x="10.11" y="0">/ca</tspan></text>
+</svg>
