@@ -1,5 +1,147 @@
-@use '../abstracts' as p;
+@use '../abstracts' as a;
 
 body {
-    color: p.$primary-color;
+    color: a.$primary-color;
+}
+
+#hero-section {
+    margin: 80px 20px;
+}
+
+#hero-section button {
+    width: 240px;
+    height: 30px;
+    border: 1px solid;
+    margin: 20px auto;
+    border-color: a.$primary-color;
+    background-color: a.$secondary-color;
+}
+
+#hero-text-1 {
+    margin-right: 50px;
+    margin-bottom: 40px;
+    font-size: a.$base-font-size;
+}
+
+#hero-text-2 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: a.$base-font-size;
+}
+
+#work-section {
+    background-color: a.$primary-color;
+    color: a.$secondary-color;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    margin-bottom: 160px;
+}
+
+#work-section video {
+    width: 100%;
+}
+
+#logo-icon-ca {
+    margin: 60px auto;
+    max-width: 180px;
+    min-width: 130px;
+}
+
+.titles-main {
+    margin: 60px 0 120px;
+    text-align: center;
+    font-size: a.$huge-font-size;
+    font-weight: a.$light-font-weight;
+}
+
+.work-title {
+    margin-top: 60px;
+    text-align: center;
+    font-size: a.$huge-font-size;
+    font-weight: a.$light-font-weight;
+}
+
+.main-work-title {
+    font-size: a.$huge-font-size;
+    font-weight: a.$light-font-weight;
+    line-height: 70px;
+}
+
+#projects-section {
+    margin: 100px 20px;
+}
+
+.arrow-down {
+    margin: auto;
+    max-height: 70px;
+    margin-bottom: 60px;
+}
+
+.arrow-left-right {
+    max-width: 320px;
+    margin: 40px auto;
+}
+
+.text-goal p {
+    margin-bottom: 50px;
+}
+
+.text-project div {
+    margin-bottom: 50px;
+}
+
+#ref-main {
+    margin: 120px 20px;
+    line-height: 20px;
+}
+
+#ref-main div {
+    margin-bottom: 50px;
+}
+
+.ref-name {
+    margin-top: 8px;
+    font-size: a.$small-font-size;
+    font-weight: a.$semibold-font-weight;
+}
+
+.ref-title {
+    margin-left: 8px;
+    font-size: a.$tiny-font-size;
+    font-weight: a.$regular-font-weight;
+}
+
+@media screen and (min-width: 768px) {
+
+    #hero-section {
+        margin: 160px auto;
+    }
+    
+    #logo-icon-ca {
+        margin: auto;
+    }
+
+    #arrow-down {
+        margin: 0;
+    }
+
+    #hero-section button {
+        margin: 0;
+        max-width: 240px;
+        width: auto;
+    }
+
+    #projects-section {
+        margin: 100px auto;
+    }
+
+    #work-section {
+        padding-bottom: 120px;
+    }
+
+    .text-goal p {
+        font-size: a.$small-font-size;
+        margin-bottom: 50px;
+        padding-right: 40px;
+    }
 }

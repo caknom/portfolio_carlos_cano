@@ -1,5 +1,10 @@
 @use "../abstracts/variables" as a;
 
+#sticky-nav-con {
+    border-bottom: 1px solid;
+    border-bottom-color: a.$primary-color;
+}
+
 #main-nav button {
     width: 32px;
     height: 32px;
@@ -27,8 +32,10 @@
 #main-nav ul {
     background-color: a.$primary-color;
     list-style: none;
-    padding: 50px 0;
+    padding: 30px 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #main-nav ul li a {
@@ -53,7 +60,33 @@ nav, ul, li, a {
 
 #logo {
     width: 200px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin: 15px 0;
     margin-inline: max(25px,50% - 290px/2);
+}
+
+@media screen and (min-width: 768px) {
+
+    #button {
+        display: none;
+    }
+
+    #burger-con {
+        display: block;
+        font-size: 12px;
+    }
+
+    #main-nav ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0 50px;
+        background-color: a.$secondary-color;
+        color: a.$primary-color;
+    }
+
+    #main-nav ul li a {
+        background-color: a.$secondary-color;
+        color: a.$primary-color;
+    }
+
+
 }
