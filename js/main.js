@@ -4,24 +4,19 @@
 let smoother = ScrollSmoother.create({
     wrapper: '#smooth-wrapper',
     content: '#smooth-content',
-    smooth: 2,
+    smooth: 1.5,
     smoothTouch: 0.1
 })
-    })
 })();
 
 (() => {
-    (function () {
-        let burger = document.querySelector("#button");
-        let burgerCon = document.querySelector("#burger-con");
-    
-        function hamburgerMenu() {
-            burger.classList.toggle("expanded");
-            burgerCon.classList.toggle("slide-toggle");
-        };
-    
-        burger.addEventListener("click", hamburgerMenu, false);
-    })();
+    let burger = document.querySelector("#button");
+    let burgerCon = document.querySelector("#burger-con");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("expanded");
+        burgerCon.classList.toggle("slide-toggle");
+    });
 })();
 
 (() => {

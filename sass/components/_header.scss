@@ -1,9 +1,12 @@
 @use "../abstracts/variables" as a;
 
 #sticky-nav-con {
-    border-bottom: 1px solid;
-    border-bottom-color: a.$primary-color;
+    // background-color: a.$secondary-color;
 }
+
+// * {
+//     border: 1px solid;
+// }
 
 #main-nav button {
     width: 32px;
@@ -15,47 +18,54 @@
     border: 0;
 }
 
+#main-nav {
+    position: relative;
+    // background-color: a.$secondary-color;
+}
+
 #main-nav button.expanded {
     transform: rotate(90deg);
 }
 
 #burger-con {
-    margin-top: 0;
     margin-bottom: 20px;
     display: none;
+    // background-color: a.$secundary-color;
 }
 
 #burger-con.slide-toggle {
     display: block;
+    // background-color: a.$primary-color;
 }
 
 #main-nav ul {
-    background-color: a.$primary-color;
     list-style: none;
     padding: 30px 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: a.$primary-color;
+}
+
+#main-nav ul li:hover {
+    background-color: a.$secondary-color;
 }
 
 #main-nav ul li a {
     font-size: a.$base-font-size;
     font-weight: a.$regular-font-weight;
-    background-color: a.$primary-color;
-    display: block;
-    padding: 0 20px;
-    text-align: left;
     color: a.$secondary-color;
+    padding: 15px 20px;
 }
 
 #main-nav ul li a:hover {
-    background-color: a.$primary-color;
-    color: a.$secondary-color;
+    color: a.$primary-color;
 }
 
 nav, ul, li, a {    
     text-decoration: none;
-    font-weight: a.$regular-font-weight;
 }
 
 #logo {
@@ -70,9 +80,15 @@ nav, ul, li, a {
         display: none;
     }
 
+    #sticky-nav-con {
+        // background-color: a.$secondary-color;
+    }
+
     #burger-con {
         display: block;
         font-size: 12px;
+        padding-top: 60px;
+        // background-color: a.$secondary-color;
     }
 
     #main-nav ul {
@@ -84,9 +100,11 @@ nav, ul, li, a {
     }
 
     #main-nav ul li a {
-        background-color: a.$secondary-color;
         color: a.$primary-color;
     }
 
-
+    #main-nav ul li a:hover {
+        background-color: a.$primary-color;
+        color: a.$secondary-color;
+    }
 }
