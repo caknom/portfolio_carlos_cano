@@ -1,41 +1,29 @@
 @use "../abstracts/variables" as a;
 
-#sticky-nav-con {
-    // background-color: a.$secondary-color;
+nav, ul, li, a, button {    
+    text-decoration: none;
 }
 
-// * {
-//     border: 1px solid;
-// }
-
-#main-nav button {
-    width: 32px;
-    height: 32px;
-    background: url(../images/icon-burger.svg) no-repeat center;
-    margin-top: 16px;
-    transition: all .3s ease;
-    margin-bottom: 20px;
-    border: 0;
+#sticky-nav-con {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20;
 }
 
 #main-nav {
     position: relative;
-    // background-color: a.$secondary-color;
+    top: 0;
 }
 
-#main-nav button.expanded {
-    transform: rotate(90deg);
-}
-
-#burger-con {
+#main-nav button {
+    font-size: a.$big-font-size;
+    font-weight: a.$bold-font-weight;
+    width: 160px;
+    height: 32px;
+    margin-top: 16px;
     margin-bottom: 20px;
-    display: none;
-    // background-color: a.$secundary-color;
-}
-
-#burger-con.slide-toggle {
-    display: block;
-    // background-color: a.$primary-color;
+    border: 0;
 }
 
 #main-nav ul {
@@ -49,40 +37,11 @@
     background-color: a.$primary-color;
 }
 
-#main-nav ul li:hover {
-    background-color: a.$secondary-color;
-}
-
-#main-nav ul li a {
-    font-size: a.$base-font-size;
-    font-weight: a.$regular-font-weight;
-    color: a.$secondary-color;
-    padding: 15px 20px;
-}
-
-#main-nav ul li a:hover {
-    color: a.$primary-color;
-}
-
-nav, ul, li, a {    
-    text-decoration: none;
-}
-
-#logo {
-    width: 200px;
-    margin: 15px 0;
-    margin-inline: max(25px,50% - 290px/2);
+#main-nav button:hover {
+    color: a.$medium-highlight-color;
 }
 
 @media screen and (min-width: 768px) {
-
-    #button {
-        display: none;
-    }
-
-    #sticky-nav-con {
-        // background-color: a.$secondary-color;
-    }
 
     #burger-con {
         display: block;

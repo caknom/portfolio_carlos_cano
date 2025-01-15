@@ -1,7 +1,13 @@
 @use '../abstracts' as a;
 
 #contact-main {
-    margin: 0 20px 60px;
+    margin: 90px 90px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    background-color: a.$secondary-color;
+    box-shadow: 0 -10px 60px a.$medium-highlight-color;
+    z-index: 3;
 }
 
 #contact-main h2 {
@@ -63,7 +69,7 @@
 @media screen and (min-width: 768px) {
 
     #contact-main {
-        margin: 0 auto 160px;
+        margin: 0 auto;
     }
 
     #contact-text {
