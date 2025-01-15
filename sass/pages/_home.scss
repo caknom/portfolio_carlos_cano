@@ -1,32 +1,88 @@
 @use '../abstracts' as a;
 
+// * {
+//     border: 1px solid;
+// }
+
 body {
     color: a.$primary-color;
 }
 
 #hero-section {
-    margin: 80px 20px;
-}
-
-#hero-section button {
-    width: 240px;
-    height: 30px;
-    border: 1px solid;
-    margin: 20px auto;
-    border-color: a.$primary-color;
+    position: relative;
+    height: 360px;
+    margin: 80px 0;
     background-color: a.$secondary-color;
+    z-index: 5;
+    box-shadow: 0 40px 40px a.$light-highlight-color;
 }
 
-#hero-text-1 {
-    margin-right: 50px;
-    margin-bottom: 40px;
-    font-size: a.$base-font-size;
+#name-main {
+    font-size: 220px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: auto;
 }
 
-#hero-text-2 {
-    margin-left: 50px;
-    margin-bottom: 20px;
-    font-size: a.$base-font-size;
+#lname-main {
+    font-size: 220px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    background-color: a.$secondary-color;
+    padding: 80px;
+}
+
+.slider-con {
+    position: relative;
+    top: 70px;
+    background-color: a.$secondary-color;
+    transform: rotate(-5deg);
+}
+
+.slider {
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+}
+
+.slider p {
+    margin: 0px;
+    font-size: 100px;
+    font-weight: a.$semibold-font-weight;
+    padding: 45px 0px 45px 35px;
+    background-color: a.$secondary-color;
+    box-shadow: 40px 20px 40px a.$light-highlight-color;
+}
+
+.slider p:nth-of-type(2) {
+    position: absolute;
+    left: 100%;
+}
+
+.hero-text-con {
+    position: absolute;
+    top: 0;
+    height: 2000px;
+    font-size: a.$big-font-size;
+    line-height: 28px;
+}
+
+.hero-text-con-1 {
+    position: absolute;
+    height: 2000px;
+    top: 340px;
+    left: 240px;
+    width: 620px;
+}
+
+.hero-text-con-2 {
+    position: absolute;
+    height: 2000px;
+    top: 490px;
+    left: 450px;
+    width: 600px;
 }
 
 #work-section {
@@ -35,6 +91,10 @@ body {
     padding-top: 60px;
     padding-bottom: 120px;
     margin-bottom: 160px;
+    margin-top: 380px;
+    position: relative;
+    box-shadow: 0 40px 40px a.$light-highlight-color;
+    z-index: 2;
 }
 
 #work-section video {
@@ -54,17 +114,15 @@ body {
     font-weight: a.$light-font-weight;
 }
 
-.work-title {
-    margin-top: 60px;
-    text-align: center;
-    font-size: a.$huge-font-size;
-    font-weight: a.$light-font-weight;
-}
-
 .main-work-title {
     font-size: a.$huge-font-size;
     font-weight: a.$light-font-weight;
     line-height: 70px;
+}
+
+#studyCases-main {
+    height: 120px;
+    align-content: center;
 }
 
 #projects-section {
@@ -91,8 +149,11 @@ body {
 }
 
 #ref-main {
-    margin: 120px 20px;
+    margin: 0px 20px;
     line-height: 20px;
+    position: relative;
+    background-color: a.$secondary-color;
+    z-index: 1;
 }
 
 #ref-main div {
@@ -123,12 +184,6 @@ body {
 
     #arrow-down {
         margin: 0;
-    }
-
-    #hero-section button {
-        margin: 0;
-        max-width: 240px;
-        width: auto;
     }
 
     #projects-section {
